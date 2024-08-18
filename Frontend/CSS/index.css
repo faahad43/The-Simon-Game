@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.pressed{
+    box-shadow:5px 8px 5px 1px #fffc, -5px -5px 5px 2px #fffc ;
+}
+.game{
+    background: #3C3C3B;
+    height: 100vh;
+    
+}
+
+.game1{
+    height: 50%;
+}
+
+.heading{
+    font-size: 3rem;
+    text-align: center;
+    color: #FFC107;
+    font-weight: bold;
+    height: 10%;
+    padding: 1.25rem;
+    margin-top: 0;
+}
+.highest-score{
+    text-align: center;
+    color: #c02121;
+}
+
+.level{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: #22c55e;
+    padding: 1.25rem;
+    height: 10%;
+}
+.game-board{
+    max-width: 370px ;
+    min-width: 300px ;
+    margin: 0 auto;
+    margin-top: 3%;
+    height: 350px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items:center;
+    align-items: center;
+    gap: 1px;
+}
+
+
+.block{
+    width: 150px;
+    height: 150px;
+    border-radius: 0.25rem;
+}
+.block1{
+    background: #e6e6c8;
+}
+.block2{
+    background: #DB3069;
+}
+.block3{
+    background: #F5D547;
+}
+.block4{
+    background: #1446A0;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #DB3069;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.btn:hover {
+    background-color: #a92247;
+}
+
+.logout{
+    background: #d13636;
+    outline: none;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 1s;
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top:2%;
+}
+.leaderboard-btn{
+    background: #d13636;
+    outline: none;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: color 1s;
+    cursor: pointer;
+    position: absolute;
+    left: 2%;
+    top:2%;
+}
+.logout:hover,.leaderboard-btn:hover{
+    background-color: #e72727;
+
+}
